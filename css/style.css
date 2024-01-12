@@ -229,6 +229,15 @@ li {
     top: 0;
     left: 0;
 }
+.main__image img::before {
+    content: "image not loaded";
+    color: #fff;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    height: 585px;
+    background-color: var(--color-primary);
+}
 .main__image::after {
     content: "";
     background: url('../img/main/decor.svg');
@@ -331,6 +340,16 @@ li {
     object-fit: cover;
     position: absolute;
     left: 0;
+}
+.item__image img::before {
+    content: "image not loaded";
+    color: #000;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    width: 100%;
+    height: 192px;
+    background-color: #f4d5bb;
 }
 .item__image:not(:last-child) {
     margin-bottom: 40px;
@@ -446,6 +465,15 @@ li {
     top: 0;
     left: 0;
 }
+.item-category__image img::before {
+    content: "image not loaded";
+    color: #fff;
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 280px;
+    background-color: #373737;
+}
 
 @media (max-width: 1230px) {
     .categories__items {
@@ -512,6 +540,15 @@ li {
     max-height: 100%;
     object-fit: cover;
     position: absolute;
+}
+.brands__item img::before {
+    content: "\FFFD" attr(alt);
+    color: var(--color-text-primary);
+    text-align: center;
+    display: grid;
+    align-items: center;
+    width: 100%;
+    height: 71px;
 }
 @media (max-width: 991.98px) {
     .brands__container {
@@ -661,6 +698,17 @@ li {
     top: 0;
     left: 0;
     object-fit: cover;
+}
+.slide-swiper-reviews__image img::before {
+    content: "image not loaded";
+    color: #fff;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    width: 326px;
+    height: 341px;
+    background-color: #373737;
 }
 .slide-swiper-reviews__image::before {
     content: "";
@@ -833,6 +881,15 @@ li {
     border-radius: 25px;
     width: 100%;
 }
+.images-favorite__first img::before{
+    content: "image not loaded";
+    color: #000;
+    padding: 10px;
+    display: block;
+    width: 213px;
+    height: 461px;
+    background-color: #b6b5b5;
+}
 .images-favorite__second {
     max-width: 213px;
     max-height: 461px;
@@ -845,6 +902,15 @@ li {
 .images-favorite__second img {
     border-radius: 25px;
     width: 100%;
+}
+.images-favorite__second img::before{
+    content: "image not loaded";
+    color: #000;
+    padding: 10px;
+    display: block;
+    width: 213px;
+    height: 461px;
+    background-color: #b6b5b5;
 }
 .images-favorite__decor {
     display: block;
