@@ -676,6 +676,7 @@ li {
 .slide-swiper-reviews {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     gap: 40px;
 }
 .slide-swiper-reviews__picture {
@@ -738,6 +739,23 @@ li {
     font-weight: 400;
     line-height: 160%;
     max-width: 524px;
+    overflow-y: hidden;
+    position: relative;
+}
+.slide-swiper-reviews__text.expanded {
+    max-height: none;
+}
+.slide-swiper-reviews__expand-btn {
+    padding: 3px 13px;
+    background-color: var(--color-primary);
+    font-size: inherit;
+    border: 1px solid #222;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 2px;
+    right: 0;
+    cursor: pointer;
+    display: none; /* block */
 }
 .slide-swiper-reviews__name {
     color: #000;
