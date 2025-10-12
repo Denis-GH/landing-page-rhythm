@@ -1,0 +1,132 @@
+.page__favorite {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  @media (max-width: 509px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.favorite {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__body {
+    flex: 0 1 50%;
+  }
+
+  &__title {
+    text-align: left;
+    font-size: 48px;
+    max-width: 480px;
+    line-height: 140%;
+    margin-bottom: 60px;
+
+    @media (max-width: 991.98px) {
+      margin-bottom: 25px;
+    }
+
+    @media (max-width: 509px) {
+      line-height: 1.1;
+      font-size: 38px;
+    }
+  }
+
+  &__images {
+    flex: 0 1 50%;
+    height: 533px;
+    max-width: 568px;
+    position: relative;
+    display: flex;
+
+    @media (max-width: 1149px) {
+      display: flex;
+      gap: 20px;
+    }
+
+    @media (max-width: 509px) {
+      max-height: 310px;
+    }
+  }
+}
+
+.apps-favorite__item {
+  display: inline-block;
+
+  &:not(:last-child) {
+    margin-right: 26px;
+  }
+}
+
+.images-favorite {
+  &__first,
+  &__second {
+    max-width: 213px;
+    max-height: 461px;
+    position: absolute;
+    border-radius: 25px;
+    box-shadow: 0 4px 80px 0 rgba(0, 0, 0, 0.08);
+
+    img {
+      border-radius: 25px;
+      width: 100%;
+
+      &::before {
+        content: "image not loaded";
+        color: #000;
+        padding: 10px;
+        display: block;
+        width: 213px;
+        height: 461px;
+        background-color: #b6b5b5;
+      }
+    }
+
+    @media (max-width: 509px) {
+      width: 120px;
+      height: 259px;
+
+      img {
+        border-radius: 12px;
+      }
+    }
+  }
+
+  &__first {
+    top: 0;
+    left: 49px;
+
+    @media (max-width: 1149px) {
+      left: 21px;
+      flex: 0 1 50%;
+    }
+  }
+
+  &__second {
+    bottom: 0;
+    right: 59px;
+
+    @media (max-width: 1149px) {
+      right: 21px;
+      flex: 0 1 50%;
+    }
+  }
+
+  &__decor {
+    display: block;
+    width: 100%;
+    height: 354px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    align-self: center;
+
+    @media (max-width: 509px) {
+      height: 190px;
+    }
+  }
+}
