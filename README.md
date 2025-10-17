@@ -14,6 +14,7 @@
 
 - **HTML/SCSS**: Структура и стилизация приложения.
 - **JavaScript + Swiper.js**: Реализация слайдера для динамического отображения отзывов клиентов.
+- **Figma**: [Макет](https://www.figma.com/design/Hp3RsG1myULYl9psdpZQ7k/Guitar-Website-Design--Community---Copy-)
 
 ## Особенности
 
